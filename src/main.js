@@ -20,14 +20,13 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      content: cowsay.think({ text: faker.lorem.words(3) }),
+      content: cowsay.think({ text: 'Click the button!' }),
     };
     this.handleButtonClick = this.handleButtonClick.bind(this);
   }
-
   handleButtonClick() {
     this.setState(() => {
-      return { content: cowsay.think({ text: faker.lorem.words(3) }) };
+      return { content: cowsay.think({ text: `${faker.commerce.product()} ${faker.commerce.product()}` }) };
     });
   }
 
