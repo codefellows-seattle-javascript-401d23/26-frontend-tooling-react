@@ -11,15 +11,15 @@ const webpackConfig = module.exports = {};
 webpackConfig.entry = `${__dirname}/src/main.js`;
 
 webpackConfig.output = {
-  filename:'[name].[hash].js',
-  path: `{__dirname}/build`,
+  filename: '[name].[hash].js',
+  path: `${__dirname}/build`,
   publicPath: process.env.CDN_URL,
 };
 
 webpackConfig.plugins = [
-    new HTMLWebpackPlugin({
-      title: '401d23. this will be the title of the HTML file',
-    }),
+  new HTMLWebpackPlugin({
+    title: 'Josh\'s Lab 26',
+  }),
 ];
 
 webpackConfig.module = {};
@@ -27,19 +27,20 @@ webpackConfig.module.rules = [
   {
     test: /\.(png|svg|jpg|gif)$/,
     use: [
-        'file-loader',
+      'file-loader',
     ],
-  },{
+  },
+  {
     test: /\.js$/,
     use: {
-      loader: 'babel-loader',  // this is transpiling the app!
+      loader: 'babel-loader', // this is transpiling the app!
       options: {
-        presets: ['env', 'stage-o', 'react'],
+        presets: ['env', 'stage-0', 'react'],
         plugins: ['transform-react-jsx-source'],
         cacheDirectory: true,
-      }
-    }
-    //object are used to config a process vs. an array
+      },
+    },
+    // object are used to config a process vs. an array
   },
 ];
 
