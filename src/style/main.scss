@@ -1,0 +1,40 @@
+$background-color: #aefffc;
+$cow-background: #000000;
+$font-color: #FFFFFF;
+$font-type: "Courier New", monospace;
+
+html, body {
+  background: $background-color;
+}
+
+header {
+  font-family: $font-type;
+  text-align: center;
+}
+
+div {
+  margin: auto;
+  width: 500px;
+  text-align: center;
+
+  pre {
+    margin: auto;
+    text-align: left;
+    width: 300px;
+    border: 20px solid $cow-background;
+    border-radius: 20px;
+    background: $cow-background;
+    color: $font-color;
+  }
+
+  button {
+    background: $cow-background;
+    color: $font-color;
+    width: 340px;
+    border: 1px solid $cow-background;
+    border-radius: 20px;
+    height: 30px;
+    margin: 10px;
+    font-family: $font-type;
+  }
+}
