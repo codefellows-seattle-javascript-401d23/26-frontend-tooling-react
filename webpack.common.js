@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const webpackConfig = module.exports = {};
 
-webpackConfig.entry = `${__dirname/src/main.js}`;
+webpackConfig.entry = `${__dirname}/src/main.js`;
 
 webpackConfig.output = {
   filename: '[name].[hash].js',
@@ -14,7 +14,7 @@ webpackConfig.output = {
 
 webpackConfig.plugins = [
   new HtmlWebpackPlugin({
-    title: 'Jennifer\'s HTML file',
+    title: 'Jennifers HTML file',
   }),
 ];
 
@@ -24,7 +24,7 @@ webpackConfig.module.rules = [
     test: /\.(png|svg|jpg|gif)$/,
     use: [
       'file-loader',
-    ]
+    ],
   },
   {
     test: /\.js$/,

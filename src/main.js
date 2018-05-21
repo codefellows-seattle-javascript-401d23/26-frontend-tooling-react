@@ -6,7 +6,7 @@ import '../style/main.scss';
 
 class HeaderComponent extends React.Component {
   render() {
-    return(
+    return (
       <header>
         <h1>Hello World from Jennifer</h1>
       </header>
@@ -55,7 +55,6 @@ class App extends React.Component {
   }
 
   render() {
-
     return (
       <div>
         <HeaderComponent/>
