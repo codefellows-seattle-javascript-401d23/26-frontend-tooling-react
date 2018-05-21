@@ -59,15 +59,15 @@ class App extends React.Component {
       <div>
         <HeaderComponent/>
         <h2> Hey, I am an h2.</h2>
-        <p> Hey! This is a random number: { Math.random } </p>,
+        <p> Hey! This is a random number: { Math.random() } </p>,
         <p>Here is a message from the developer: {this.state.message}</p>
         <ul>{
           ['Darwin', 'Cocoa', 'Conker'].map(content => <li key={content}> { content }</li>)
         }
         </ul>
         <p> The value of my counter is { this.state.counter }</p>
-        <button onClick={this.handCounterIncrement}>Increment Counter</button>
-        <button onClick={this.handCounterDecrement}>Decrement Counter</button>
+        <button onClick={this.handleCounterIncrement}>Increment Counter</button>
+        <button onClick={this.handleCounterDecrement}>Decrement Counter</button>
         <input type='number' onChange={this.setCounter} value={this.state.counter}/>
       </div>
     );
