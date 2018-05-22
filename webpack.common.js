@@ -32,6 +32,7 @@ webpackConfig.module.rules = [
   },
   {
     test: /\.js$/,
+    exclude: /node_modules/,
     use: {
       loader: 'babel-loader', // this is transpiling the app!
       options: {
