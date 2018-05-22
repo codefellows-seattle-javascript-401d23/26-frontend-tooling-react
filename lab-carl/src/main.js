@@ -24,7 +24,7 @@ class App extends React.Component {
       const newText = faker.random.words(3);
       return {
         content: newText,
-        cowsayRender: cowsayBrowser.think({ text: this.state.content }),
+        cowsayRender: cowsayBrowser.think({ text: newText }),
       };
     });
   }
