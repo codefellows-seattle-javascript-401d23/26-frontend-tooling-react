@@ -7,7 +7,7 @@ To use:
 - Fork and clone this repo
 - Run `npm i`
 - The following changes must be made to the `balloon.js` file contained within the cowsay-browser folder inside of node_modules:
-  ```
+```
 exports.say = function (text, wrap) {
 	var delimiters = {
 		first : ["/", "\\"],
