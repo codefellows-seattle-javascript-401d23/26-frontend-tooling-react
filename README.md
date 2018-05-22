@@ -22,3 +22,6 @@ to
 ```
 var delimiters = {
 ```
+
+To start the app at http://localhost:8080/:
+* ` npm run watch`
