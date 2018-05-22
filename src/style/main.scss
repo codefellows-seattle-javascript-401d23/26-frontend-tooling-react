@@ -1,10 +1,15 @@
 $background-color: #000000;
 $font-color: #FFFFFF;
+$pre-color: green;
 
 html, body {
   background: $background-color;
 }
 
-p,h1,h2,ul {
+h1 {
   color: $font-color;
+}
+
+pre {
+  color: $pre-color;
 }
