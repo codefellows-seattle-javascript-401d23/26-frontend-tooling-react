@@ -1,4 +1,4 @@
-#COWSAY
+# COWSAY
 Developer: Josiah Green
 version 1.0.0
 
