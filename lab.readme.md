@@ -14,22 +14,22 @@ Faker Library
 
 ## Features
 
-This program allows the user to see the 
-## Code Example
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+This program allows the user to see the cowsay html output with some random words. The user can choose what cowsay animal is talking and can observe how react only changes targeted components of html.
 
-## Installation
-Provide step by step series of examples and explanations about how to get a development env running.
 
-## How to use?
+## Installation and How to Use
+In order to install this this program and run it from your own computer follow these simple steps:
+``` cd ~```
+```git clone https://github.com/Deliman206/26-frontend-tooling-react.git```
+```npm i```
+```npm run watch```
 
+and have fun!!
 
 ## Credits
 COWSAY MOOOOOOO!
 
-#### Anything else that seems useful
 
 ## License
-A short snippet describing the license (MIT, Apache etc)
 
-MIT © [Yourname]()
+MIT © [Sean](https://github.com/Deliman206)
