@@ -6,17 +6,6 @@ import faker from 'faker';
 import '../style/main.scss';
 
 
-class HeaderComponent extends React.Component {
-  render() {
-    return (
-      <header>
-        <h1>Hello Cow</h1>
-      </header>
-    );
-  }
-}
-
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -44,13 +33,16 @@ class App extends React.Component {
 
   render() {
     return (
+      <main>
       <div>
-        <HeaderComponent/>
+        <h1>Generate Cowsay Lorem</h1>
+        <h2>A Silly Little App</h2>
         <p>
           <pre>{this.state.picture}</pre>
-          <button onClick={this.handleAnimalTalk}>Click Me</button>
         </p>
+        <button onClick={this.handleAnimalTalk}>Click Me</button>
       </div>
+      </main>
     );
   }
 }
