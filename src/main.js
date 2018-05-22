@@ -20,13 +20,22 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      content: cowsay.think({ text: 'Click the button!' }),
+      content: 'Click the button!',
+      cowType: 'default',
     };
     this.handleButtonClick = this.handleButtonClick.bind(this);
+    this.handleSelectChange = this.handleSelectChange.bind(this);
   }
   handleButtonClick() {
     this.setState(() => {
-      return { content: cowsay.think({ text: `${faker.commerce.product()} ${faker.commerce.product()}` }) };
+      return { content: `${faker.commerce.product()} ${faker.commerce.product()}` };
+    });
+  }
+
+  handleSelectChange(e) {
+    const type = e.target.value;
+    this.setState(() => {
+      return { cowType: type };
     });
   }
 
@@ -34,8 +43,15 @@ class App extends React.Component {
     return (
       <div>
         <Header/>
-        <pre>{ this.state.content }</pre>
+        <pre>{ cowsay.think({ text: this.state.content, f: this.state.cowType }) }</pre>
         <button onClick={ this.handleButtonClick }>CLICK ME</button>
+        <select onChange={ this.handleSelectChange }>
+          <option>--Change Animal Type--</option>
+          <option value="dragon">Dragon</option>
+          <option value="turtle">Turtle</option>
+          <option value="stegosaurus">Fancy Stegosaurus</option>
+          <option value="meow">Tiger</option>
+        </select>
       </div>
     );
   }

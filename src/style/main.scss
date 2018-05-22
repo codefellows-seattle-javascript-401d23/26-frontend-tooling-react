@@ -14,13 +14,12 @@ header {
 
 div {
   margin: auto;
-  width: 500px;
+  width: 600px;
   text-align: center;
 
   pre {
     margin: auto;
     text-align: left;
-    width: 300px;
     border: 20px solid $cow-background;
     border-radius: 20px;
     background: $cow-background;
@@ -30,11 +29,20 @@ div {
   button {
     background: $cow-background;
     color: $font-color;
-    width: 340px;
+    width: 250px;
     border: 1px solid $cow-background;
-    border-radius: 20px;
     height: 30px;
-    margin: 10px;
+    margin: 10px 10px;
     font-family: $font-type;
+  }
+
+  select {
+    background: $cow-background;
+    border: 1px solid $cow-background;
+    color: $font-color;
+    font-family: $font-type;
+    width: 250px;
+    height: 30px;
+    margin: auto;
   }
 }
