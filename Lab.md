@@ -40,13 +40,13 @@ Your lab directory must include:
 #### Feature Tasks  
 Create the following component
 ###### App
-[ ] Should contain the entire application's view and state
-[ ] Should have a property on the state called content 
-[ ] Should create a view with the following display
+[x] Should contain the entire application's view and state
+[x] Should have a property on the state called content 
+[x] Should create a view with the following display
   [x] A heading with the title "Generate Cowsay Lorem"
-  [ ] A Button that says "click me"
-    [ ] `onClick` the button should generate new content on the app state using cowsay and faker
-  [ ] A pre tag that displays the App's state content 
+  [x] A Button that says "click me"
+    [x] `onClick` the button should generate new content on the app state using cowsay and faker
+  [x] A pre tag that displays the App's state content 
 
 ####  Documentation  
 [ ] Write a description of the project in your README.md
