@@ -1,6 +1,6 @@
 # Description
 
-A simple React app that renders a cowsay cow on the page and allows users to click a button to generate new lorem text for the cow to 'say'.
+A simple React app that renders a cowsay cow on the page and allows users to click a button to generate new words text for the cow to 'say', or change the type of animal saying the words.
 
 This app uses React.js, cowsay, webpack, Sass, babel, and faker.
 
