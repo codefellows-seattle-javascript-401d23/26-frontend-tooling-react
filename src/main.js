@@ -21,12 +21,18 @@ class App extends React.Component{
 
         this.state={
             content: null,
+            selectedAnimal: SQUIRREL,
         };
     }
     handleButtonPush(){
         this.setState((previousState)=>{
             return{
-                content:Faker.name.firstName(),
+                content:Cowsay.think({
+                    text:Faker.name.firstName(),
+                    cow:selectedAnimal,
+                    eyes:'pp',
+                    tongue:'; ;',
+                }),
             };
         });
     }
@@ -37,10 +43,17 @@ class App extends React.Component{
                 <HeaderComponent/>
                 <body>
                     {
-                        content=>Cowsay.think({text:this.state.content})
+                        state.content
                     }
                 </body>
-                <button onClick={this.handleButtonPush}>click me</button>
+                <button onClick={this.handleButtonPush}>click me for new content</button>
+                <ol class='vertical-menu'>
+                <li><button onClick={selectedAnimal=SQUIRREL}>Talk with the Squirrel</button></li>
+                <li><button onClick={selectedAnimal=COW}>Talk with the Cow</button></li>
+                <li><button onClick={selectedAnimal=DRAGON}>Talk with the Dragon</button></li>
+                <li><button onClick={selectedAnimal=KOALA}>Talk with the Koala</button></li>
+                </ol>
+                <pre></pre>
             </div>
         );
     }
