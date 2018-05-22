@@ -1,0 +1,27 @@
+$background-color: #000000;
+$font-color: #FFFFFF;
+$pre-color: green;
+$background2: lightgrey;
+
+html, body {
+  background: $background-color;
+  padding: 5% 10%;
+}
+
+h1 {
+  color: $font-color;
+  margin-bottom: 5%;
+}
+
+button {
+  background: $background2;
+  margin-bottom: 5%;
+  width: 40%;
+  padding: 5px;
+}
+
+pre {
+  background: $background2;
+  color: $pre-color;
+  padding: 5% 25%;
+}
