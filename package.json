@@ -1,0 +1,43 @@
+{
+  "name": "26-frontend-tooling-react",
+  "version": "1.0.0",
+  "description": "401 JS --  Lab 26 Cowsay\r ===",
+  "main": "webpack.common.js",
+  "dependencies": {
+    "cowsay": "^1.3.0",
+    "css-loader": "^0.28.11",
+    "dotenv": "^5.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.15.1",
+    "eslint-plugin-react": "^7.8.2",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.2"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "watch": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spinaltaper/26-frontend-tooling-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spinaltaper/26-frontend-tooling-react/issues"
+  },
+  "homepage": "https://github.com/spinaltaper/26-frontend-tooling-react#readme"
+}
