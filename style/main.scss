@@ -1,10 +1,10 @@
-$background-color: #ffffff;
-$font-color: #000000;
+$background-color: #f49503;
+$font-color: #0440ff;
 
 html,body {
   background: $background-color;
 }
 
-p,h1,h2,ul {
+p,h1,h2,ul,pre {
   color: $font-color;
 }
