@@ -1,0 +1,48 @@
+$background-color: #aefffc;
+$cow-background: #000000;
+$font-color: #FFFFFF;
+$font-type: "Courier New", monospace;
+
+html, body {
+  background: $background-color;
+}
+
+header {
+  font-family: $font-type;
+  text-align: center;
+}
+
+div {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+
+  pre {
+    margin: auto;
+    text-align: left;
+    border: 20px solid $cow-background;
+    border-radius: 20px;
+    background: $cow-background;
+    color: $font-color;
+  }
+
+  button {
+    background: $cow-background;
+    color: $font-color;
+    width: 250px;
+    border: 1px solid $cow-background;
+    height: 30px;
+    margin: 10px 10px;
+    font-family: $font-type;
+  }
+
+  select {
+    background: $cow-background;
+    border: 1px solid $cow-background;
+    color: $font-color;
+    font-family: $font-type;
+    width: 250px;
+    height: 30px;
+    margin: auto;
+  }
+}
