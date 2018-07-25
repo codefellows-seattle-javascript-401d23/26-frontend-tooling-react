@@ -19,6 +19,22 @@ webpackDevConfig.plugins = [
   new HotModuleReplacementPlugin(),
 ];
 
+webpackDevConfig.plugins = [
+  new HotModuleReplacementPlugin(),
+];
+
+webpackDevConfig.plugins = [
+  new HotModuleReplacementPlugin(),
+];
+
+webpackDevConfig.plugins = [
+  new HotModuleReplacementPlugin(),
+];
+
+webpackDevConfig.plugins = [
+  new HotModuleReplacementPlugin(),
+];
+
 webpackDevConfig.module = {};
 webpackDevConfig.module.rules = [
   {
