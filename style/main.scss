@@ -1,0 +1,10 @@
+$background-color: #50be1e;
+$front-color: #ffffff;
+
+html,body {
+  background: $background-color;
+}
+
+p,h1,h2,ul {
+  color:$front-color;
+}
